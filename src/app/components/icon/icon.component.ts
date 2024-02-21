@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-icon',
@@ -25,4 +25,12 @@ export class IconComponent {
    *
    * 4 - Adapt to use the @Input value and replace the class
    */
+
+  @Input() iconName:
+    | 'heart'
+    | 'heart-fill'
+    | 'sun'
+    | 'sun-fill'
+    | 'droplet'
+    | 'droplet-fill' = 'heart';
 }

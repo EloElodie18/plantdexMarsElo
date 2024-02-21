@@ -1,5 +1,5 @@
 <div class="card">
-  <div class="container-img-plant">  
+  <div class="container-img-plant">
     <img [src]="plant.image" class="card-img-top" [alt]="plant.nom" />
   </div>
   <div class="card-body">
@@ -7,6 +7,16 @@
       {{ plant.nom }}
     </h5>
     <p class="card-text">{{ plant.categorie }}</p>
+
+    <div>
+      <app-icon [iconName]="'heart'"></app-icon>
+      <app-icon [iconName]="'heart-fill'"></app-icon>
+      <app-icon [iconName]="'droplet'"></app-icon>
+      <app-icon [iconName]="'droplet-fill'"></app-icon>
+      <app-icon [iconName]="'sun'"></app-icon>
+      <app-icon [iconName]="'sun-fill'"></app-icon>
+    </div>
+
     <a href="#" class="btn btn-success">Je l'ai !</a>
   </div>
 </div>
