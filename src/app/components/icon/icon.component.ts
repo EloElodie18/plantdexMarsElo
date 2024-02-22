@@ -32,5 +32,9 @@ export class IconComponent {
     | 'sun'
     | 'sun-fill'
     | 'droplet'
-    | 'droplet-fill' = 'heart';
+    | 'droplet-fill'
+    | 'postcard-heart' = 'heart';
+
+  @Input() iconColor = 'yellow';
+  @Input() iconSize: number = 1.5;
 }

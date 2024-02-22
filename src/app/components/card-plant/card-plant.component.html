@@ -9,12 +9,37 @@
     <p class="card-text">{{ plant.categorie }}</p>
 
     <div>
-      <app-icon [iconName]="'heart'"></app-icon>
-      <app-icon [iconName]="'heart-fill'"></app-icon>
-      <app-icon [iconName]="'droplet'"></app-icon>
-      <app-icon [iconName]="'droplet-fill'"></app-icon>
-      <app-icon [iconName]="'sun'"></app-icon>
-      <app-icon [iconName]="'sun-fill'"></app-icon>
+      <app-icon
+        [iconName]="'heart'"
+        [iconColor]="'#e35d6a'"
+        [iconSize]="4"
+      ></app-icon>
+      <app-icon [iconName]="'heart-fill'" [iconColor]="'#e35d6a'"></app-icon>
+      <app-icon
+        [iconName]="'droplet'"
+        [iconColor]="'rgb(51,10, 232)'"
+        [iconSize]="2"
+      ></app-icon>
+      <app-icon
+        [iconName]="'droplet-fill'"
+        [iconColor]="'rgb(51,10, 232)'"
+        [iconSize]="2"
+      ></app-icon>
+      <app-icon
+        [iconName]="'sun'"
+        [iconColor]="'orange'"
+        [iconSize]="1"
+      ></app-icon>
+      <app-icon
+        [iconName]="'sun-fill'"
+        [iconColor]="'orange'"
+        [iconSize]="1"
+      ></app-icon>
+      <app-icon
+        [iconName]="'postcard-heart'"
+        [iconColor]="'orange'"
+        [iconSize]="1.5"
+      ></app-icon>
     </div>
 
     <a href="#" class="btn btn-success">Je l'ai !</a>
