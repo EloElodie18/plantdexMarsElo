@@ -1,0 +1,10 @@
+<div *ngIf="detailsPlante"> <!--pr afficher seulement si ma plante est définit-->
+    <h2>Nom de ma plante: {{ detailsPlante.nom }}</h2>
+    <h2>Id de ma plante: {{ detailsPlante.id }}</h2>    
+    <DIV>
+    <img [src]="detailsPlante.image" class="card-img-top" style="max-width: 500px; max-height: 500px" [alt]="detailsPlante.nom" />
+    </DIV>
+    <h2>Categorie de ma plante: {{ detailsPlante.categorie }}</h2>
+    <h2>Ensoleillement nécessaire: {{ detailsPlante.soleil }}</h2>
+    <h2>Arrosage nécessaire: {{ detailsPlante.arrosage }}</h2>
+</div>

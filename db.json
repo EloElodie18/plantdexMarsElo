@@ -1,44 +1,20 @@
 {
   "plants": [
     {
-      "id": 952438,
-      "nom": "Anthurium, pot D12cm",
-      "soleil": "moyen",
-      "arrosage": 2,
-      "categorie": "plantes fleuries",
-      "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0952000/952438_003.jpg"
-    },
-    {
-      "id": 77390,
-      "nom": "Anthurium: Pot 17cm petit modèle - Coloris variables",
-      "soleil": "moyen",
-      "arrosage": 2,
-      "categorie": "plantes fleuries",
-      "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0077000/77390_010.jpg"
-    },
-    {
-      "id": 910762,
-      "nom": "Anthurium elipticum 'Jungle Bush' pot déco foncé D24cm",
-      "soleil": "moyen",
-      "arrosage": 2,
-      "categorie": "plantes fleuries",
-      "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910762_001.jpg"
-    },
-    {
       "id": 801427,
-      "nom": "Strelitzia Nicolai : D.21-H.75",
-      "soleil": "moyen",
-      "arrosage": 2,
+      "nom": "Strelitzia ",
+      "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801427_001.jpg",
       "categorie": "plantes fleuries",
-      "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0801000/801427_001.jpg"
+      "arrosage": 2,
+      "soleil": "moyen"
     },
     {
       "id": 910744,
-      "nom": "Spathiphyllum 'Sweet Lauretta' Pot déco foncé D24cm",
-      "soleil": "moyen",
-      "arrosage": 2,
+      "nom": "Spathiphyllum",
+      "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910744_001.jpg",
       "categorie": "plantes fleuries",
-      "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910744_001.jpg"
+      "arrosage": 2,
+      "soleil": "moyen"
     },
     {
       "id": 910743,
@@ -1023,6 +999,14 @@
       "arrosage": 2,
       "categorie": "palmiers d'intérieur",
       "image": "https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0910000/910673_001.jpg"
+    },
+    {
+      "nom": "Ma belle plante verte",
+      "image": "C:\\Users\\Utilisateur\\Documents\\ANGULAR\\plantexFromIcone\\plantdex_frontend\\src\\assets\\892926.png",
+      "categorie": "Plante verte",
+      "arrosage": "3",
+      "soleil": "moyen",
+      "id": 1029002
     }
   ]
 }

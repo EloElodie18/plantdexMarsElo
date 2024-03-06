@@ -1,0 +1,81 @@
+<form (ngSubmit)="onSubmitForm()" [formGroup]="formPlant">
+
+    <div class="mb-3" >
+        <label for="input-plant-name" class="form-label">Nom</label> 
+        <input type="text" formControlName="nom" id="input-plant-name" class="form-control" [ngClass]="{
+                'is-invalid':
+                  formPlant.controls['nom'].touched && formPlant.controls['nom'].invalid
+              }" aria-labelledby="invalid-feedback-input-name" /> <!--pr permettre l'accessibilité-->
+        <div class="invalid-feedback" id="invalid-feedback-input-name">
+            Ce champ est requis
+        </div>
+        <!-- <span *ngIf="formPlant.controls['nom'].touched && formPlant.controls['nom'].invalid">Ce champ est requis</span> -->
+    </div>
+
+    <div>
+    <label for="input-plant-image" class="form-label">Image</label>
+    <input 
+    type="text" 
+    formControlName="image"
+    id="input-plant-image"
+    class="form-control"
+    />
+    </div>
+
+    <div>
+    <label for="input-plant-categorie" class="form-label">Catégorie</label>
+    <!-- <input 
+    type="text" 
+    formControlName="categorie"
+    id="input-plant-categorie"
+    class="form-control"
+    /> -->
+    <select formControlName="categorie"
+    id="input-plant-categorie"
+    class="form-control">
+        <option value="plantes fleuries"> Plantes fleuries </option>
+        <option value="orchidés"> Orchidés </option>
+        <option value="cactus et plantes grasses"> Cactus et plantes grasses </option>
+        <option value="bonsaïs"> Bonsaïs </option>
+        <option value="plantes vertes"> Plantes vertes </option>
+        <option value="palmier d'intérieur"> Palmiers d'intérieur </option>
+     </select>
+    </div>
+
+    <div>
+    <label for="input-plant-arrosage" class="form-label">Arrosage</label>
+    <!-- <input 
+    type="text" 
+    formControlName="arrosage"
+    id="input-plant-arrosage"
+    class="form-control"
+    /> -->
+    <select formControlName="arrosage"
+    id="input-plant-arrosage"
+    class="form-control">
+        <option value="0">Ne pas arroser</option>
+        <option value="2">Arroser moderement</option>
+        <option value="3">Arroser régulièrement</option>
+    </select>
+    </div>
+
+    <div>
+    <label for="input-plant-exposition" class="form-label">Exposition</label>
+    <!-- <input 
+    type="text" 
+    formControlName="soleil"
+    id="input-plant-exposition"
+    class="form-control"
+    /> -->
+    <select formControlName="soleil"
+    id="input-plant-exposition"
+    class="form-control">
+        <option value="peu">Demande peu de soleil</option>
+        <option value="moyen">Demande une exposition moyenne au soleil</option>
+        <option value="beaucoup">Demande beaucoup d'exposition au soleil</option>
+    </select>
+    </div>
+
+    <button [disabled]="formPlant.invalid" type="submit">Valider</button> <!--invalide, ne peut valider si un des champs n'est pas remplit grace au disabled-->
+
+</form>

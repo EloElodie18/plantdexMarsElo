@@ -1,1 +1,40 @@
-<p>page-admin works!</p>
+<h1>Page Admin plantdex</h1>
+<a routerLink="/admin/new-plant">
+    <button class="btn btn-success">Nouvelle plante</button>
+</a>
+<!--ou <button class="btn btn-success" routerlink="new-plant">ajouter plante </button>-->
+
+<table class="table"> <!--On fait un tableau avec plantes dedans-->
+    <thead> <!--contient les entêtes du tableau-->
+        <th>Nom</th><!--colonnes de mon tableau, entête-->
+        <th>Image</th>
+        <th>Categorie</th>
+        <th>Besoin d'ensoleillement</th>
+        <th>Besoin d'arrosage</th>
+        <th>Modifier ma plante</th>
+        <th>Supprimer ma plante</th>
+    </thead>
+    <tbody><!--corps de mon tableau-->
+        <tr *ngFor="let plantData of plantsToDisplay"> <!-- tr = une 1ere ligne; autant de td que de tr, autant de colonne que de ligne; et td c'est une cellule-->
+            <td> {{plantData.nom}} </td>
+            <td><img src= "{{ plantData.image }}" alt="Image {{ plantData.nom }}" class="w-25" ></td> <!--le w-25 permet de dimineuer la taille de mes plantes-->
+            <td>{{plantData.categorie}}</td>
+            <td>{{plantData.soleil}}</td>
+            <td>{{plantData.arrosage}}</td>
+
+            <td>
+            <a routerLink="/admin/plant/edit/{{plantData.id}}">
+                <button class="btn">
+                    <app-icon [iconName]= "'bi bi-pencil'" [iconColor]="'green'"></app-icon>
+            </button>
+            </a>
+            </td>
+
+            <td>
+                <button class="btn" (click)="onClickDeletePlant(plantData.id)">
+                    <app-icon [iconName]="'trash'" [iconColor]="'red'"></app-icon>
+                </button>
+            </td>
+    </tbody>
+</table>
+<!--<app-neww-plant></app-new-plant>-->

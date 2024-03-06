@@ -13,6 +13,11 @@ import { CardPlantComponent } from './components/card-plant/card-plant.component
 import { FilterSideBarComponent } from './components/filter-side-bar/filter-side-bar.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { IconComponent } from './components/icon/icon.component';
+import { PageNewPlantComponent } from './pages/page-new-plant/page-new-plant.component';
+import { FormPlantComponent } from './components/form-plant/form-plant.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PagePlantDetailsComponent } from './pages/page-plant-details/page-plant-details.component';
+import { PageEditPlantComponent } from './pages/page-edit-plant/page-edit-plant.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +31,13 @@ import { IconComponent } from './components/icon/icon.component';
     FilterSideBarComponent,
     SearchBarComponent,
     IconComponent,
+    PageNewPlantComponent,
+    FormPlantComponent,
+    PagePlantDetailsComponent,
+    PageEditPlantComponent,
+    
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

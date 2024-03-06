@@ -26,15 +26,16 @@ export class IconComponent {
    * 4 - Adapt to use the @Input value and replace the class
    */
 
-  @Input() iconName:
+  @Input() iconName: string //ajouter le type pour que card comprenne
     | 'heart'
     | 'heart-fill'
     | 'sun'
     | 'sun-fill'
+    | 'bi bi-pencil'
     | 'droplet'
     | 'droplet-fill'
-    | 'postcard-heart' = 'heart';
+    | 'trash' = 'heart';
 
   @Input() iconColor = 'yellow';
-  @Input() iconSize: number = 1.5;
+  @Input() iconSize: number = 2;
 }

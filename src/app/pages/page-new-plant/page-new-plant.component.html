@@ -1,0 +1,5 @@
+<h1>Création d'une nouvelle plante</h1>
+<a routerLink="/admin"><button class="btn btn-success">Retour page admin</button></a>
+<div>
+<app-form-plant (submitFormPlant)="newPlantSubmitted($event)"></app-form-plant><!--donnés envoyees à la methode newPlantSub-->
+</div>

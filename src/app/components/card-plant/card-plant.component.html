@@ -1,4 +1,4 @@
-<div class="card">
+<div [routerLink]="['/plant/details', plant.id]" class="card">
   <div class="container-img-plant">
     <img [src]="plant.image" class="card-img-top" [alt]="plant.nom" />
   </div>
@@ -8,14 +8,22 @@
     </h5>
     <p class="card-text">{{ plant.categorie }}</p>
 
-    <div>
-      <app-icon
-        [iconName]="'heart'"
-        [iconColor]="'#e35d6a'"
-        [iconSize]="4"
-      ></app-icon>
-      <app-icon [iconName]="'heart-fill'" [iconColor]="'#e35d6a'"></app-icon>
-      <app-icon
+    <div class="card-textArrosage" style="display: inline-block">
+      <B>Arrosage:</B>
+      <ng-container *ngFor="let icon of recupIconArrosage()">
+        <app-icon [iconName]="icon" iconColor="blue" [iconSize]="1.5" ></app-icon>
+      </ng-container>
+    </div>
+
+    <div class="card-textEnsoleil" style="display: inline-block">
+      <B>Exposition:</B>
+      <ng-container *ngFor="let icon of recupIconSoleil()">
+        <app-icon [iconName]="icon" iconColor="yellow" [iconSize]="1.5"></app-icon>
+      </ng-container>
+    </div>
+
+      <!-- <div>
+        <app-icon
         [iconName]="'droplet'"
         [iconColor]="'rgb(51,10, 232)'"
         [iconSize]="2"
@@ -28,20 +36,17 @@
       <app-icon
         [iconName]="'sun'"
         [iconColor]="'orange'"
-        [iconSize]="1"
+        [iconSize]="2"
       ></app-icon>
       <app-icon
         [iconName]="'sun-fill'"
         [iconColor]="'orange'"
-        [iconSize]="1"
+        [iconSize]="2"
       ></app-icon>
-      <app-icon
-        [iconName]="'postcard-heart'"
-        [iconColor]="'orange'"
-        [iconSize]="1.5"
-      ></app-icon>
-    </div>
+    </div> --> 
 
-    <a href="#" class="btn btn-success">Je l'ai !</a>
+    <div style="display: inline-block">
+    <a href="#" class="btn btn-success" >Je l'ai !</a>
+    </div>
   </div>
 </div>
